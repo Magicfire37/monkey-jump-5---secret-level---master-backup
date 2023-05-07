@@ -1,0 +1,35 @@
+{
+    "name": "monkey jump 5 - secret level - Master backup in case micah messes it up again!!",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll/",
+        "pxt-tilemaps": "github:microsoft/pxt-tilemaps/"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts",
+        "tutorial.custom.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.7.24",
+        "tag": "v1.7.24",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/e7bd2e723209fb725f6274543dab7aa940537364",
+        "target": "1.12.30",
+        "pxt": "7.3.26",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
