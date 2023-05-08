@@ -160,6 +160,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile32`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level9`)
+    info.changeLifeBy(20)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(7, 14))
     game.showLongText("You have a choice. You may risk it all and continue to the secret levels (blue door), or end the game now and get your final score (red door). Choose wisely as there is no way back", DialogLayout.Bottom)
 })
@@ -663,6 +664,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
     game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile14`, function (sprite, location) {
+    info.changeLifeBy(20)
     tiles.setCurrentTilemap(tilemap`level9`)
     tiles.placeOnTile(mySprite, tiles.getTileLocation(7, 14))
     game.showLongText("You have a choice. You may risk it all and continue to the secret levels (blue door), or end the game now and get your final score (red door). Choose wisely as there is no way back", DialogLayout.Bottom)
@@ -693,4 +695,3 @@ controller.moveSprite(mySprite, 100, 0)
 mySprite.ay = 500
 scene.cameraFollowSprite(mySprite)
 mySprite.sayText("Hi, My name is Moco FRap. use arrow keys to move, space to place a block, and down arrow to dynamite.", 10000, true)
-info.startCountdown(60)
